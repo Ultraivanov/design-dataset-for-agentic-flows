@@ -3,6 +3,8 @@
 A curated dataset of web design references, analyzed through a consistent lens and stored as machine-readable YAML. Built to serve as structured reference material for agentic design tools.
 
 [![Validate](https://github.com/Ultraivanov/design-dataset-for-agentic-flows/actions/workflows/validate.yml/badge.svg)](https://github.com/Ultraivanov/design-dataset-for-agentic-flows/actions/workflows/validate.yml)
+[![Sites](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FUltraivanov%2Fdesign-dataset-for-agentic-flows%2Fmain%2Fbadge-stats.json&query=%24.sites&style=flat)](./sites)
+[![Curated by](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FUltraivanov%2Fdesign-dataset-for-agentic-flows%2Fmain%2Fbadge-stats.json&query=%24.contributors&style=flat)](./CONTRIBUTING.md)
 
 ## Why this exists
 

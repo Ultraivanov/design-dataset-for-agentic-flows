@@ -1,0 +1,14 @@
+{
+  "sites": {
+    "schemaVersion": 1,
+    "label": "sites",
+    "message": "3",
+    "color": "black"
+  },
+  "contributors": {
+    "schemaVersion": 1,
+    "label": "curated by",
+    "message": "the maintainer",
+    "color": "black"
+  }
+}
