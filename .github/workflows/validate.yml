@@ -1,0 +1,66 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate all site entries
+        run: npm run validate
+
+      - name: Verify export.json is
+cd ~/Projects/design-db
+
+# ---------- .github/workflows/validate.yml ----------
+mkdir -p .github/workflows
+cat > .github/workflows/validate.yml <<'EOF'
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate all site entries
+        run: npm run validate
+
+      - name: Verify export.json is up to date
+        run: |
+          npm run build
+          if ! git diff --exit-code export.json; then
+            echo ""
+            echo "::error::export.json is out of date. Run 'npm run build' locally and commit the result."
+            exit 1
+          fi
