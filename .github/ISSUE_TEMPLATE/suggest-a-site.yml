@@ -1,0 +1,64 @@
+name: Suggest a site
+description: Point us at a site whose design you consider exemplary.
+title: "[Suggest] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing. We only need the link — we'll do the analysis.
+
+  - type: input
+    id: url
+    attributes:
+      label: Site URL
+      description: The full URL, including https://
+      placeholder: https://example.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which space does this site belong to?
+      options:
+        - B2B SaaS / developer tools
+        - AI / ML products
+        - Infrastructure / hardware
+        - Venture capital / funds
+        - Agency / studio
+        - Personal portfolio
+        - E-commerce / fashion
+        - Media / publishing
+        - Consumer app
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this exemplary?
+      description: One or two sentences. What makes it a reference in its category?
+      placeholder: The hero type pairs a geometric display serif with a monospace caption — rare in this category, and done with restraint.
+    validations:
+      required: false
+
+  - type: input
+    id: credit
+    attributes:
+      label: How should we credit you?
+      description: Your name, and optionally a link (personal site, LinkedIn, Twitter). Leave blank to submit anonymously.
+      placeholder: Dima Ivanov — https://ginzburg.work
+    validations:
+      required: false
+
+  - type: input
+    id: relationship
+    attributes:
+      label: Any relationship to the site?
+      description: Did you work on it, or know the people who did? Totally fine either way — just be upfront.
+      placeholder: No relationship / I designed it / Friend of the team
+    validations:
+      required: false

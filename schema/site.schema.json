@@ -7,6 +7,20 @@
     "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
     "url": { "type": "string", "format": "uri" },
     "captured_at": { "type": "string", "format": "date" },
+    "credits": {
+      "type": "object",
+      "properties": {
+        "suggested_by": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "link": { "type": "string" },
+            "category_expertise": { "type": "string" }
+          }
+        },
+        "analyzed_by": { "type": "string" }
+      }
+    },
     "direction": {
       "type": "object",
       "required": ["one_liner", "tags"],
