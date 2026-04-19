@@ -1,0 +1,125 @@
+id: crusoe-ai
+url: https://www.crusoe.ai
+captured_at: "2026-04-19"
+
+direction:
+  one_liner: "Industrial-editorial infrastructure: isometric SVG over white with a single electric-yellow punctuation mark"
+  tags:
+    - industrial
+    - editorial
+    - infra-tech
+    - light
+    - illustrative
+    - corporate-serious
+    - b2b
+
+typography:
+  display:
+    family: "Custom geometric sans, condensed proportions (reads as bespoke or licensed — not system)"
+    weights: [500, 600]
+    features:
+      - "tight tracking at display sizes"
+      - "hero headlines clamp from ~48px to ~120px"
+      - "sentence-case, no all-caps"
+    note: "The headline typeface is the first signal of budget and seriousness; it is clearly not a free Google font."
+  body:
+    family: "Neutral geometric sans"
+    weights: [400, 500]
+  scale_contrast: high
+  notes: |
+    Hero headlines do the heavy lifting. Body copy stays small, technical, almost
+    datasheet-like. The contrast between a 100px headline and 14px caption is the
+    rhythm of the whole page.
+
+color:
+  mode: light
+  background: "#FFFFFF"
+  foreground: "#0A0A0A"
+  accents:
+    - name: signal-yellow
+      hex: "#E8FF00"
+      role: "single sharp accent — square dots, highlights inside illustrations, cursor for key CTAs"
+    - name: section-grey
+      hex: "#F2F2F2"
+      role: "soft background for alternating sections"
+  palette_strategy: |
+    Dominant black-on-white with one electric accent used as punctuation, not area.
+    If the yellow were deployed as a background fill anywhere the whole composition
+    would collapse into dev-tool cliche. The discipline is the design.
+
+layout:
+  grid: "12col with large hero blocks and numbered (01–04) stacked product sections"
+  density: generous
+  signature_moves:
+    - "Numbered sections (01 Managed AI / 02 Cloud / 03 Data Centers / 04 Energy) that scroll-reveal vertically, turning a broad stack into a narrative"
+    - "Isometric SVG illustrations of data centers, microgrids, and server racks instead of stock renders"
+    - "Full-width logo carousel with high-signal customers (Cursor, Windsurf, HeyGen)"
+    - "Sticky headers that swap the adjacent illustration as you scroll"
+
+motion:
+  philosophy: restrained
+  techniques:
+    - "scroll-triggered reveals of numbered sections"
+    - "sticky title swaps illustration as user scrolls past"
+    - "infinite horizontal logo marquee"
+    - "carousel of model chips with prev/next arrows"
+  library_guess: "Webflow native interactions, likely with a GSAP ScrollTrigger layer"
+
+texture:
+  backgrounds:
+    - "flat white as dominant ground"
+    - "muted grey as the only section break"
+    - "photographic avatars only inside testimonial cards"
+  depth: layered
+
+signature_detail: |
+  The isometric SVG illustrations with yellow square accents. They communicate
+  "we operate physical infrastructure" without a single stock photo, and the
+  numbered 01–04 rhythm converts a four-product portfolio into a single vertical
+  narrative. Nothing else on the page is louder than the illustration, and the
+  illustration itself is monochrome except for the yellow squares — which is
+  exactly why the yellow reads as voltage.
+
+stack_guess:
+  framework: Webflow
+  evidence: "Asset CDN paths use website-files.com and prod.website-files.com — Webflow's signature asset pipeline. Asset IDs follow Webflow's hash naming pattern."
+  confidence: very high
+
+applicability:
+  works_for:
+    - "B2B infrastructure and developer-platform companies with enterprise buyers"
+    - "Hardware-adjacent or deep-tech companies that need to feel solid"
+    - "Companies with a portfolio of 3–5 products (numbered narrative works)"
+    - "Series C+ stage where restraint reads as confidence"
+  avoid_for:
+    - "Consumer products that need warmth or personality"
+    - "Early-stage scrappy startups — this aesthetic reads as institutional"
+    - "Single-product companies (the numbered-stack move has nothing to chew on)"
+
+design_tokens:
+  - token: "--bg"
+    value: "#FFFFFF"
+  - token: "--fg"
+    value: "#0A0A0A"
+  - token: "--accent-signal"
+    value: "#E8FF00"
+  - token: "--section-break"
+    value: "#F2F2F2"
+  - token: "--radius-sharp"
+    value: "2px"
+  - token: "--section-number-size"
+    value: "clamp(48px, 6vw, 96px)"
+  - token: "--hero-size"
+    value: "clamp(48px, 7vw, 120px)"
+  - token: "--hero-leading"
+    value: "1.05"
+
+notes: |
+  Authority is built from three moves: (1) numbered product structure that
+  narrates rather than lists, (2) custom isometric illustrations in place of
+  stock renders, (3) customer logos (Cursor, Windsurf, HeyGen) placed inside
+  a section header rather than relegated to a marketing strip.
+
+  The yellow works because it is rare. On the scale of the viewport it probably
+  occupies <1% of painted pixels. A 30% increase in yellow coverage would push
+  the site into hackathon-poster territory.

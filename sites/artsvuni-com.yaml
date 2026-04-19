@@ -1,0 +1,118 @@
+id: artsvuni-com
+url: https://artsvuni.com
+captured_at: "2026-04-19"
+
+direction:
+  one_liner: "Humble brutalist designer portfolio: raw document aesthetic with one typographic in-joke"
+  tags:
+    - brutalist
+    - portfolio
+    - raw
+    - personal
+    - typographic
+    - document-like
+    - framer
+
+typography:
+  display:
+    family: "Distinctive grotesk with monospace leanings — reads like GT America Mono or a similar industrial face"
+    weights: [400, 600]
+    features:
+      - "diacritics used as ornament ('Intêrnatiønal Cømmęrče')"
+      - "moderate size — H2 scale, not oversized hero"
+      - "sentence-case throughout"
+    note: |
+      The author explicitly cites "humble brutalist architecture" as an influence.
+      The type choice follows: geometric, plain, no flourishes, but a single
+      deliberate deformation — accented characters — acts as the signature.
+  body:
+    family: "Neutral sans, slightly tight leading"
+    weights: [400]
+  scale_contrast: moderate
+  notes: |
+    The page behaves like a document, not a landing page. Paragraphs flow with
+    soft line breaks. Inline links sit inside sentences. This is a CV rendered
+    as a webpage, not a marketing site dressed as a CV.
+
+color:
+  mode: light
+  background: "#FFFFFF"
+  foreground: "#111111"
+  accents:
+    - name: link-blue
+      hex: "#0000EE"
+      role: "inline links, underlined, near-browser-default"
+  palette_strategy: |
+    Zero chrome. Black on white plus one functional link color. All visual energy
+    is displaced onto the embedded media (GIFs and MP4s of real product work),
+    which is where credibility lives in a designer portfolio anyway.
+
+layout:
+  grid: single-column
+  density: moderate
+  signature_moves:
+    - "Full-bleed GIFs and MP4s of real shipped product work (Instagram Shops localization, Farfetch navigation)"
+    - "Case studies written as short paragraphs — role, scope, outcome in one breath"
+    - "Long tiled strip of album covers at the bottom as a personal signal"
+    - "Email address as the primary CTA via mailto: link"
+
+motion:
+  philosophy: minimal
+  techniques:
+    - "autoplaying GIFs and inline video carry the demonstration"
+    - "no scroll orchestration, no reveal animations"
+  library_guess: "Framer (native — no custom motion)"
+
+texture:
+  backgrounds:
+    - "pure white"
+  depth: flat
+
+signature_detail: |
+  The typographic in-joke in the section title "Intêrnatiønal Cømmęrče" —
+  extensive diacritics scattered across the word. It is simultaneously a visual
+  ornament and a direct commentary on the case study's subject (localization
+  across languages and scripts). It is the only decorative element on the
+  entire site, and because it is the only one, it functions as the author's
+  signature.
+
+stack_guess:
+  framework: Framer
+  evidence: "All asset URLs route through framerusercontent.com. The duplicated HTML blocks in the source correspond to Framer's responsive breakpoint rendering."
+  confidence: very high
+
+applicability:
+  works_for:
+    - "Personal portfolios of designers, engineers, or technical writers"
+    - "Independent consultants or senior ICs whose work should speak for itself"
+    - "CV-style pages where credibility outweighs conversion"
+  avoid_for:
+    - "Product marketing sites — no conversion rhythm"
+    - "Teams that need to signal scale and stack"
+    - "Contexts where 'professional' is equated with 'polished'"
+
+design_tokens:
+  - token: "--bg"
+    value: "#FFFFFF"
+  - token: "--fg"
+    value: "#111111"
+  - token: "--link"
+    value: "#0000EE"
+  - token: "font-display"
+    value: '"GT America Mono", "JetBrains Mono", ui-monospace, monospace'
+  - token: "font-body"
+    value: "system-ui, -apple-system, sans-serif"
+  - token: "--measure"
+    value: "60ch"
+  - token: "--gap-between-cases"
+    value: "6rem"
+
+notes: |
+  This is the antithesis of Crusoe and DCVC. Those sites construct institutional
+  authority. This one constructs personal credibility — and does so precisely
+  by refusing to package itself as an agency would.
+
+  Core lesson: if you build a personal site, do not imitate agency polish.
+  Stay at the document level, let the work embed directly, and add exactly one
+  typographic signature somewhere unexpected. The restraint is what reads as
+  confidence.

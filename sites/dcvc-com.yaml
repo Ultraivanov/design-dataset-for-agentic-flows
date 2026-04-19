@@ -1,0 +1,123 @@
+id: dcvc-com
+url: https://www.dcvc.com
+captured_at: "2026-04-19"
+
+direction:
+  one_liner: "Editorial deep-tech VC: serif gravitas, italic punch-lines, print-magazine pacing"
+  tags:
+    - editorial
+    - serif
+    - magazine
+    - venture-capital
+    - refined
+    - light
+    - print-inspired
+    - intellectual
+
+typography:
+  display:
+    family: "High-contrast transitional serif — reads like GT Sectra, Tiempos Headline, or Canela"
+    weights: [400, 500]
+    features:
+      - "italic emphasis inside headlines ('hardest, highest-stakes problems' set italic)"
+      - "tight leading around 1.0–1.05"
+      - "generous size, full hero statement rather than a tagline"
+  body:
+    family: "Neutral humanist sans — Sohne, Graphik, or National 2 family"
+    weights: [400, 500]
+  scale_contrast: extreme
+  notes: |
+    The defining typographic move is italic injection. A serif display face with
+    selective italics inside the headline signals "there is a point of view here,
+    this is an essay not a pitch." It is the single most efficient way to buy
+    editorial credibility in a web context.
+
+color:
+  mode: light
+  background: "#FAFAF7"
+  foreground: "#1A1A1A"
+  accents:
+    - name: deep-ink
+      hex: "#0F2A5C"
+      role: "links and subtle brand marker"
+    - name: paper-tint
+      hex: "#F2EFE8"
+      role: "warm section backgrounds"
+  palette_strategy: |
+    Near-monochrome warm paper palette. Color is not a tool here — typography is.
+    The single brand blue reads as a printed ink color rather than a UI primary.
+
+layout:
+  grid: "editorial: wide margins, clear text column, card grids for portfolio highlights"
+  density: generous
+  signature_moves:
+    - "Hero video auto-plays with an explicit Pause/Play control, signaling content not spam"
+    - "Spotlight companies rotate as richly described cards, each with an investment date"
+    - "Content Topics taxonomy in the footer (Climate, TechBio, Space, Defense) scoped like a publication"
+    - "Standalone typographic quote-blocks used as breath between sections"
+
+motion:
+  philosophy: restrained
+  techniques:
+    - "ambient hero video with manual pause"
+    - "spotlight carousel with soft transitions"
+    - "minimal hover states on cards"
+  library_guess: "Custom/jQuery-era implementation; no heavy motion library is visible"
+
+texture:
+  backgrounds:
+    - "warm off-white paper tone"
+    - "muted photography inside portfolio cards"
+  depth: flat
+
+signature_detail: |
+  Italic injection inside serif display type. The phrase "hardest, highest-stakes
+  problems" set in italic serif at display size carries the entire hero —
+  no illustrations, no gradients, no decorative elements. It is a pull-quote
+  treatment applied to the headline itself, and it tells the reader in one
+  glance that this is a publisher, not a dashboard.
+
+stack_guess:
+  framework: "Craft CMS"
+  evidence: "Image paths follow /imager/uploads/ — the signature of Craft CMS with the Imager plugin. Markup is server-rendered rather than hydrated."
+  confidence: high
+
+applicability:
+  works_for:
+    - "Venture funds, research labs, think tanks"
+    - "Long-form content brands (newsletters, publishers, media companies)"
+    - "Consultancies and advisory firms"
+    - "B2B companies that need to read as serious and intellectual"
+  avoid_for:
+    - "Fast-moving consumer products needing immediate warmth"
+    - "Developer tools where scan-ability beats reading"
+    - "Anything that needs to feel young, playful, or casual"
+
+design_tokens:
+  - token: "--bg"
+    value: "#FAFAF7"
+  - token: "--fg"
+    value: "#1A1A1A"
+  - token: "--accent-ink"
+    value: "#0F2A5C"
+  - token: "--paper-tint"
+    value: "#F2EFE8"
+  - token: "font-display"
+    value: '"GT Sectra", "Tiempos Headline", "Canela", Georgia, serif'
+  - token: "font-body"
+    value: '"Sohne", "Graphik", system-ui, sans-serif'
+  - token: "--hero-size"
+    value: "clamp(40px, 5.5vw, 88px)"
+  - token: "--hero-leading"
+    value: "1.05"
+  - token: "--measure"
+    value: "65ch"
+
+notes: |
+  The site is the work of One Design Company, a San Francisco studio that also
+  designs books. This explains the print sensibility — they carry typographic
+  habits from physical formats into the browser.
+
+  The most transferable lesson: selective italics inside a serif headline buy
+  "writer with a point of view" at very low cost. One font weight, one character
+  style change, and the whole register of the page shifts.

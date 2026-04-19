@@ -1,0 +1,412 @@
+[
+  {
+    "id": "artsvuni-com",
+    "url": "https://artsvuni.com",
+    "captured_at": "2026-04-19",
+    "direction": {
+      "one_liner": "Humble brutalist designer portfolio: raw document aesthetic with one typographic in-joke",
+      "tags": [
+        "brutalist",
+        "portfolio",
+        "raw",
+        "personal",
+        "typographic",
+        "document-like",
+        "framer"
+      ]
+    },
+    "typography": {
+      "display": {
+        "family": "Distinctive grotesk with monospace leanings — reads like GT America Mono or a similar industrial face",
+        "weights": [
+          400,
+          600
+        ],
+        "features": [
+          "diacritics used as ornament ('Intêrnatiønal Cømmęrče')",
+          "moderate size — H2 scale, not oversized hero",
+          "sentence-case throughout"
+        ],
+        "note": "The author explicitly cites \"humble brutalist architecture\" as an influence.\nThe type choice follows: geometric, plain, no flourishes, but a single\ndeliberate deformation — accented characters — acts as the signature.\n"
+      },
+      "body": {
+        "family": "Neutral sans, slightly tight leading",
+        "weights": [
+          400
+        ]
+      },
+      "scale_contrast": "moderate",
+      "notes": "The page behaves like a document, not a landing page. Paragraphs flow with\nsoft line breaks. Inline links sit inside sentences. This is a CV rendered\nas a webpage, not a marketing site dressed as a CV.\n"
+    },
+    "color": {
+      "mode": "light",
+      "background": "#FFFFFF",
+      "foreground": "#111111",
+      "accents": [
+        {
+          "name": "link-blue",
+          "hex": "#0000EE",
+          "role": "inline links, underlined, near-browser-default"
+        }
+      ],
+      "palette_strategy": "Zero chrome. Black on white plus one functional link color. All visual energy\nis displaced onto the embedded media (GIFs and MP4s of real product work),\nwhich is where credibility lives in a designer portfolio anyway.\n"
+    },
+    "layout": {
+      "grid": "single-column",
+      "density": "moderate",
+      "signature_moves": [
+        "Full-bleed GIFs and MP4s of real shipped product work (Instagram Shops localization, Farfetch navigation)",
+        "Case studies written as short paragraphs — role, scope, outcome in one breath",
+        "Long tiled strip of album covers at the bottom as a personal signal",
+        "Email address as the primary CTA via mailto: link"
+      ]
+    },
+    "motion": {
+      "philosophy": "minimal",
+      "techniques": [
+        "autoplaying GIFs and inline video carry the demonstration",
+        "no scroll orchestration, no reveal animations"
+      ],
+      "library_guess": "Framer (native — no custom motion)"
+    },
+    "texture": {
+      "backgrounds": [
+        "pure white"
+      ],
+      "depth": "flat"
+    },
+    "signature_detail": "The typographic in-joke in the section title \"Intêrnatiønal Cømmęrče\" —\nextensive diacritics scattered across the word. It is simultaneously a visual\nornament and a direct commentary on the case study's subject (localization\nacross languages and scripts). It is the only decorative element on the\nentire site, and because it is the only one, it functions as the author's\nsignature.\n",
+    "stack_guess": {
+      "framework": "Framer",
+      "evidence": "All asset URLs route through framerusercontent.com. The duplicated HTML blocks in the source correspond to Framer's responsive breakpoint rendering.",
+      "confidence": "very high"
+    },
+    "applicability": {
+      "works_for": [
+        "Personal portfolios of designers, engineers, or technical writers",
+        "Independent consultants or senior ICs whose work should speak for itself",
+        "CV-style pages where credibility outweighs conversion"
+      ],
+      "avoid_for": [
+        "Product marketing sites — no conversion rhythm",
+        "Teams that need to signal scale and stack",
+        "Contexts where 'professional' is equated with 'polished'"
+      ]
+    },
+    "design_tokens": [
+      {
+        "token": "--bg",
+        "value": "#FFFFFF"
+      },
+      {
+        "token": "--fg",
+        "value": "#111111"
+      },
+      {
+        "token": "--link",
+        "value": "#0000EE"
+      },
+      {
+        "token": "font-display",
+        "value": "\"GT America Mono\", \"JetBrains Mono\", ui-monospace, monospace"
+      },
+      {
+        "token": "font-body",
+        "value": "system-ui, -apple-system, sans-serif"
+      },
+      {
+        "token": "--measure",
+        "value": "60ch"
+      },
+      {
+        "token": "--gap-between-cases",
+        "value": "6rem"
+      }
+    ],
+    "notes": "This is the antithesis of Crusoe and DCVC. Those sites construct institutional\nauthority. This one constructs personal credibility — and does so precisely\nby refusing to package itself as an agency would.\n\nCore lesson: if you build a personal site, do not imitate agency polish.\nStay at the document level, let the work embed directly, and add exactly one\ntypographic signature somewhere unexpected. The restraint is what reads as\nconfidence.\n"
+  },
+  {
+    "id": "crusoe-ai",
+    "url": "https://www.crusoe.ai",
+    "captured_at": "2026-04-19",
+    "direction": {
+      "one_liner": "Industrial-editorial infrastructure: isometric SVG over white with a single electric-yellow punctuation mark",
+      "tags": [
+        "industrial",
+        "editorial",
+        "infra-tech",
+        "light",
+        "illustrative",
+        "corporate-serious",
+        "b2b"
+      ]
+    },
+    "typography": {
+      "display": {
+        "family": "Custom geometric sans, condensed proportions (reads as bespoke or licensed — not system)",
+        "weights": [
+          500,
+          600
+        ],
+        "features": [
+          "tight tracking at display sizes",
+          "hero headlines clamp from ~48px to ~120px",
+          "sentence-case, no all-caps"
+        ],
+        "note": "The headline typeface is the first signal of budget and seriousness; it is clearly not a free Google font."
+      },
+      "body": {
+        "family": "Neutral geometric sans",
+        "weights": [
+          400,
+          500
+        ]
+      },
+      "scale_contrast": "high",
+      "notes": "Hero headlines do the heavy lifting. Body copy stays small, technical, almost\ndatasheet-like. The contrast between a 100px headline and 14px caption is the\nrhythm of the whole page.\n"
+    },
+    "color": {
+      "mode": "light",
+      "background": "#FFFFFF",
+      "foreground": "#0A0A0A",
+      "accents": [
+        {
+          "name": "signal-yellow",
+          "hex": "#E8FF00",
+          "role": "single sharp accent — square dots, highlights inside illustrations, cursor for key CTAs"
+        },
+        {
+          "name": "section-grey",
+          "hex": "#F2F2F2",
+          "role": "soft background for alternating sections"
+        }
+      ],
+      "palette_strategy": "Dominant black-on-white with one electric accent used as punctuation, not area.\nIf the yellow were deployed as a background fill anywhere the whole composition\nwould collapse into dev-tool cliche. The discipline is the design.\n"
+    },
+    "layout": {
+      "grid": "12col with large hero blocks and numbered (01–04) stacked product sections",
+      "density": "generous",
+      "signature_moves": [
+        "Numbered sections (01 Managed AI / 02 Cloud / 03 Data Centers / 04 Energy) that scroll-reveal vertically, turning a broad stack into a narrative",
+        "Isometric SVG illustrations of data centers, microgrids, and server racks instead of stock renders",
+        "Full-width logo carousel with high-signal customers (Cursor, Windsurf, HeyGen)",
+        "Sticky headers that swap the adjacent illustration as you scroll"
+      ]
+    },
+    "motion": {
+      "philosophy": "restrained",
+      "techniques": [
+        "scroll-triggered reveals of numbered sections",
+        "sticky title swaps illustration as user scrolls past",
+        "infinite horizontal logo marquee",
+        "carousel of model chips with prev/next arrows"
+      ],
+      "library_guess": "Webflow native interactions, likely with a GSAP ScrollTrigger layer"
+    },
+    "texture": {
+      "backgrounds": [
+        "flat white as dominant ground",
+        "muted grey as the only section break",
+        "photographic avatars only inside testimonial cards"
+      ],
+      "depth": "layered"
+    },
+    "signature_detail": "The isometric SVG illustrations with yellow square accents. They communicate\n\"we operate physical infrastructure\" without a single stock photo, and the\nnumbered 01–04 rhythm converts a four-product portfolio into a single vertical\nnarrative. Nothing else on the page is louder than the illustration, and the\nillustration itself is monochrome except for the yellow squares — which is\nexactly why the yellow reads as voltage.\n",
+    "stack_guess": {
+      "framework": "Webflow",
+      "evidence": "Asset CDN paths use website-files.com and prod.website-files.com — Webflow's signature asset pipeline. Asset IDs follow Webflow's hash naming pattern.",
+      "confidence": "very high"
+    },
+    "applicability": {
+      "works_for": [
+        "B2B infrastructure and developer-platform companies with enterprise buyers",
+        "Hardware-adjacent or deep-tech companies that need to feel solid",
+        "Companies with a portfolio of 3–5 products (numbered narrative works)",
+        "Series C+ stage where restraint reads as confidence"
+      ],
+      "avoid_for": [
+        "Consumer products that need warmth or personality",
+        "Early-stage scrappy startups — this aesthetic reads as institutional",
+        "Single-product companies (the numbered-stack move has nothing to chew on)"
+      ]
+    },
+    "design_tokens": [
+      {
+        "token": "--bg",
+        "value": "#FFFFFF"
+      },
+      {
+        "token": "--fg",
+        "value": "#0A0A0A"
+      },
+      {
+        "token": "--accent-signal",
+        "value": "#E8FF00"
+      },
+      {
+        "token": "--section-break",
+        "value": "#F2F2F2"
+      },
+      {
+        "token": "--radius-sharp",
+        "value": "2px"
+      },
+      {
+        "token": "--section-number-size",
+        "value": "clamp(48px, 6vw, 96px)"
+      },
+      {
+        "token": "--hero-size",
+        "value": "clamp(48px, 7vw, 120px)"
+      },
+      {
+        "token": "--hero-leading",
+        "value": "1.05"
+      }
+    ],
+    "notes": "Authority is built from three moves: (1) numbered product structure that\nnarrates rather than lists, (2) custom isometric illustrations in place of\nstock renders, (3) customer logos (Cursor, Windsurf, HeyGen) placed inside\na section header rather than relegated to a marketing strip.\n\nThe yellow works because it is rare. On the scale of the viewport it probably\noccupies <1% of painted pixels. A 30% increase in yellow coverage would push\nthe site into hackathon-poster territory.\n"
+  },
+  {
+    "id": "dcvc-com",
+    "url": "https://www.dcvc.com",
+    "captured_at": "2026-04-19",
+    "direction": {
+      "one_liner": "Editorial deep-tech VC: serif gravitas, italic punch-lines, print-magazine pacing",
+      "tags": [
+        "editorial",
+        "serif",
+        "magazine",
+        "venture-capital",
+        "refined",
+        "light",
+        "print-inspired",
+        "intellectual"
+      ]
+    },
+    "typography": {
+      "display": {
+        "family": "High-contrast transitional serif — reads like GT Sectra, Tiempos Headline, or Canela",
+        "weights": [
+          400,
+          500
+        ],
+        "features": [
+          "italic emphasis inside headlines ('hardest, highest-stakes problems' set italic)",
+          "tight leading around 1.0–1.05",
+          "generous size, full hero statement rather than a tagline"
+        ]
+      },
+      "body": {
+        "family": "Neutral humanist sans — Sohne, Graphik, or National 2 family",
+        "weights": [
+          400,
+          500
+        ]
+      },
+      "scale_contrast": "extreme",
+      "notes": "The defining typographic move is italic injection. A serif display face with\nselective italics inside the headline signals \"there is a point of view here,\nthis is an essay not a pitch.\" It is the single most efficient way to buy\neditorial credibility in a web context.\n"
+    },
+    "color": {
+      "mode": "light",
+      "background": "#FAFAF7",
+      "foreground": "#1A1A1A",
+      "accents": [
+        {
+          "name": "deep-ink",
+          "hex": "#0F2A5C",
+          "role": "links and subtle brand marker"
+        },
+        {
+          "name": "paper-tint",
+          "hex": "#F2EFE8",
+          "role": "warm section backgrounds"
+        }
+      ],
+      "palette_strategy": "Near-monochrome warm paper palette. Color is not a tool here — typography is.\nThe single brand blue reads as a printed ink color rather than a UI primary.\n"
+    },
+    "layout": {
+      "grid": "editorial: wide margins, clear text column, card grids for portfolio highlights",
+      "density": "generous",
+      "signature_moves": [
+        "Hero video auto-plays with an explicit Pause/Play control, signaling content not spam",
+        "Spotlight companies rotate as richly described cards, each with an investment date",
+        "Content Topics taxonomy in the footer (Climate, TechBio, Space, Defense) scoped like a publication",
+        "Standalone typographic quote-blocks used as breath between sections"
+      ]
+    },
+    "motion": {
+      "philosophy": "restrained",
+      "techniques": [
+        "ambient hero video with manual pause",
+        "spotlight carousel with soft transitions",
+        "minimal hover states on cards"
+      ],
+      "library_guess": "Custom/jQuery-era implementation; no heavy motion library is visible"
+    },
+    "texture": {
+      "backgrounds": [
+        "warm off-white paper tone",
+        "muted photography inside portfolio cards"
+      ],
+      "depth": "flat"
+    },
+    "signature_detail": "Italic injection inside serif display type. The phrase \"hardest, highest-stakes\nproblems\" set in italic serif at display size carries the entire hero —\nno illustrations, no gradients, no decorative elements. It is a pull-quote\ntreatment applied to the headline itself, and it tells the reader in one\nglance that this is a publisher, not a dashboard.\n",
+    "stack_guess": {
+      "framework": "Craft CMS",
+      "evidence": "Image paths follow /imager/uploads/ — the signature of Craft CMS with the Imager plugin. Markup is server-rendered rather than hydrated.",
+      "confidence": "high"
+    },
+    "applicability": {
+      "works_for": [
+        "Venture funds, research labs, think tanks",
+        "Long-form content brands (newsletters, publishers, media companies)",
+        "Consultancies and advisory firms",
+        "B2B companies that need to read as serious and intellectual"
+      ],
+      "avoid_for": [
+        "Fast-moving consumer products needing immediate warmth",
+        "Developer tools where scan-ability beats reading",
+        "Anything that needs to feel young, playful, or casual"
+      ]
+    },
+    "design_tokens": [
+      {
+        "token": "--bg",
+        "value": "#FAFAF7"
+      },
+      {
+        "token": "--fg",
+        "value": "#1A1A1A"
+      },
+      {
+        "token": "--accent-ink",
+        "value": "#0F2A5C"
+      },
+      {
+        "token": "--paper-tint",
+        "value": "#F2EFE8"
+      },
+      {
+        "token": "font-display",
+        "value": "\"GT Sectra\", \"Tiempos Headline\", \"Canela\", Georgia, serif"
+      },
+      {
+        "token": "font-body",
+        "value": "\"Sohne\", \"Graphik\", system-ui, sans-serif"
+      },
+      {
+        "token": "--hero-size",
+        "value": "clamp(40px, 5.5vw, 88px)"
+      },
+      {
+        "token": "--hero-leading",
+        "value": "1.05"
+      },
+      {
+        "token": "--measure",
+        "value": "65ch"
+      }
+    ],
+    "notes": "The site is the work of One Design Company, a San Francisco studio that also\ndesigns books. This explains the print sensibility — they carry typographic\nhabits from physical formats into the browser.\n\nThe most transferable lesson: selective italics inside a serif headline buy\n\"writer with a point of view\" at very low cost. One font weight, one character\nstyle change, and the whole register of the page shifts.\n"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "design-db",
+  "version": "0.1.0",
+  "description": "A curated, structured dataset of web design references.",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/yaml-to-json.js",
+    "validate": "node scripts/validate.js",
+    "check": "npm run validate && npm run build"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^3.0.1",
+    "js-yaml": "^4.1.0"
+  },
+  "license": "MIT"
+}

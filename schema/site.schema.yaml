@@ -1,0 +1,63 @@
+# site.schema.yaml
+# Canonical schema for a design-db entry. Every file in /sites must conform.
+
+id: string                     # (required) kebab-case, unique, matches filename
+url: string                    # (required) canonical URL at time of capture
+captured_at: date              # (required) ISO date as quoted string "YYYY-MM-DD"
+
+direction:
+  one_liner: string            # (required) <15 words, the headline of the record
+  tags: [string]               # (required) 3-8 lowercase tags for retrieval
+
+typography:
+  display:
+    family: string
+    weights: [number]
+    features: [string]
+    note: string
+  body:
+    family: string
+    weights: [number]
+  scale_contrast: string       # "extreme" | "high" | "moderate" | "tight"
+  notes: string
+
+color:
+  mode: string                 # "light" | "dark" | "dual"
+  background: string
+  foreground: string
+  accents:
+    - name: string
+      hex: string
+      role: string
+  palette_strategy: string
+
+layout:
+  grid: string
+  density: string
+  signature_moves: [string]
+
+motion:
+  philosophy: string
+  techniques: [string]
+  library_guess: string
+
+texture:
+  backgrounds: [string]
+  depth: string                # "flat" | "layered" | "dimensional"
+
+signature_detail: string       # (required) 1-3 sentences, name the unforgettable move
+
+stack_guess:
+  framework: string
+  evidence: string
+  confidence: string           # "very high" | "high" | "medium" | "low"
+
+applicability:
+  works_for: [string]
+  avoid_for: [string]
+
+design_tokens:
+  - token: string
+    value: string
+
+notes: string

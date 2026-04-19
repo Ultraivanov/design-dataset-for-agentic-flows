@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DesignDbSite",
+  "type": "object",
+  "required": ["id", "url", "captured_at", "direction", "signature_detail"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "url": { "type": "string", "format": "uri" },
+    "captured_at": { "type": "string", "format": "date" },
+    "direction": {
+      "type": "object",
+      "required": ["one_liner", "tags"],
+      "properties": {
+        "one_liner": { "type": "string", "maxLength": 140 },
+        "tags": { "type": "array", "minItems": 2, "items": { "type": "string" } }
+      }
+    },
+    "typography": {
+      "type": "object",
+      "properties": {
+        "display": {
+          "type": "object",
+          "properties": {
+            "family": { "type": "string" },
+            "weights": { "type": "array", "items": { "type": "number" } },
+            "features": { "type": "array", "items": { "type": "string" } },
+            "note": { "type": "string" }
+          }
+        },
+        "body": {
+          "type": "object",
+          "properties": {
+            "family": { "type": "string" },
+            "weights": { "type": "array", "items": { "type": "number" } }
+          }
+        },
+        "scale_contrast": { "type": "string", "enum": ["extreme", "high", "moderate", "tight"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "color": {
+      "type": "object",
+      "properties": {
+        "mode": { "type": "string", "enum": ["light", "dark", "dual"] },
+        "background": { "type": "string" },
+        "foreground": { "type": "string" },
+        "accents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "hex", "role"],
+            "properties": {
+              "name": { "type": "string" },
+              "hex": { "type": "string" },
+              "role": { "type": "string" }
+            }
+          }
+        },
+        "palette_strategy": { "type": "string" }
+      }
+    },
+    "layout": {
+      "type": "object",
+      "properties": {
+        "grid": { "type": "string" },
+        "density": { "type": "string" },
+        "signature_moves": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "motion": {
+      "type": "object",
+      "properties": {
+        "philosophy": { "type": "string" },
+        "techniques": { "type": "array", "items": { "type": "string" } },
+        "library_guess": { "type": "string" }
+      }
+    },
+    "texture": {
+      "type": "object",
+      "properties": {
+        "backgrounds": { "type": "array", "items": { "type": "string" } },
+        "depth": { "type": "string", "enum": ["flat", "layered", "dimensional"] }
+      }
+    },
+    "signature_detail": { "type": "string", "minLength": 20 },
+    "stack_guess": {
+      "type": "object",
+      "properties": {
+        "framework": { "type": "string" },
+        "evidence": { "type": "string" },
+        "confidence": { "type": "string", "enum": ["very high", "high", "medium", "low"] }
+      }
+    },
+    "applicability": {
+      "type": "object",
+      "properties": {
+        "works_for": { "type": "array", "items": { "type": "string" } },
+        "avoid_for": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "design_tokens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["token", "value"],
+        "properties": {
+          "token": { "type": "string" },
+          "value": { "type": "string" }
+        }
+      }
+    },
+    "notes": { "type": "string" }
+  }
+}
